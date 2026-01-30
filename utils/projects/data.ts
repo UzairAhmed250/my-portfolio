@@ -66,7 +66,7 @@ export const projects: Project[] = [
     description:
       "Scheduling tool similar to Calendly, with calendar API integration and optimized scheduling algorithms. Allows seamless appointment booking and calendar synchronization.",
     demoLink: "https://dytescheduler.example.com",
-    repoLink: "https://github.com/ashirzuhaib",
+    repoLink: "https://github.com/UzairAhmed250/dyte-scheduler",
     technologies: ["Next.js", "Firebase", "Calendar API"],
   },
 

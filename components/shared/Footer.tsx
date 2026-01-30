@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <a href="#" className="text-sun-500 font-fira font-bold text-2xl">
-              AZ<span className="text-on-dark-high">.</span>
+              UA<span className="text-on-dark-high">.</span>
             </a>
           </div>
           
