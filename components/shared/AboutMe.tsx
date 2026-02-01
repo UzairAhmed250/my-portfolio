@@ -27,26 +27,26 @@ const AboutMe = () => {
         {/* Main About Section */}
         <div className="mb-16">
           <h2 className="section-title pb-2">About Me</h2>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Main Info */}
             <GlassCard className="lg:col-span-2">
               <div className="max-w-3xl">
                 <p className="mb-6 text-lg">
                   I'm <span className="text-mauve font-semibold">Uzair Ahmed</span>, a Full Stack Developer with 1.5+ years of experience
-                  building and deploying scalable web applications using modern JavaScript frameworks. Based in Karachi, Pakistan, 
+                  building and deploying scalable web applications using modern JavaScript frameworks. Based in Karachi, Pakistan,
                   I have a proven track record in leading teams, optimizing code, and delivering client-focused solutions.
                 </p>
                 <p className="mb-6 text-slate">
-                  My expertise lies in creating secure, scalable solutions that deliver exceptional user experiences. 
-                  I've been promoted from intern to senior developer at Jtechsight, where I've developed 4+ full-stack 
+                  My expertise lies in creating secure, scalable solutions that deliver exceptional user experiences.
+                  I've been promoted from intern to senior developer at Jtechsight, where I've developed 4+ full-stack
                   applications and led development teams to ensure high-quality code and efficient workflows.
                 </p>
                 <p className="text-slate">
                   When I'm not coding, you can find me exploring new technologies, contributing to open-source
                   projects, and sharing knowledge with the developer community.
                 </p>
-              
+
                 {/* Statistics */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
                   {stats.map((stat, index) => (
@@ -55,7 +55,7 @@ const AboutMe = () => {
                 </div>
               </div>
             </GlassCard>
-            
+
             {/* Contact Info */}
             <GlassCard>
               <h3 className="text-xl font-bold text-seashell mb-6 flex items-center">
@@ -67,7 +67,7 @@ const AboutMe = () => {
                   <ContactLink key={index} {...link} />
                 ))}
               </div>
-              
+
               <div className="mt-6 p-4 bg-mauve/10 rounded-lg border border-mauve/20">
                 <div className="flex items-center mb-2">
                   <span className="text-mauve mr-2"><CursorIcon /></span>
@@ -84,9 +84,19 @@ const AboutMe = () => {
           <SectionHeading icon={<ClockIcon />} title="My Journey" />
           <Timeline items={timelineItems} />
         </div>
+        {/* Skills Matrix */}
+        <div>
+          <SectionHeading icon={<WrenchIcon />} title="Skills Matrix" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {skillCategories.map((category, index) => (
+              <SkillCard key={index} {...category} />
+            ))}
+          </div>
+        </div>
+
 
         {/* Education */}
-        <div className="mb-16">
+        <div className="mt-16">
           <SectionHeading icon={<EducationIcon />} title="Education" />
           <GlassCard>
             <div className="flex items-start">
@@ -103,15 +113,6 @@ const AboutMe = () => {
           </GlassCard>
         </div>
 
-        {/* Skills Matrix */}
-        <div>
-          <SectionHeading icon={<WrenchIcon />} title="Skills Matrix" />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {skillCategories.map((category, index) => (
-              <SkillCard key={index} {...category} />
-            ))}
-          </div>
-        </div>
       </div>
 
       {/* Decorative elements */}
